@@ -5,9 +5,10 @@ iv = "youtube_encyptyo"
 salt = "youtube_AesEncryption"
 
 #AWS Access And Secret key
-aws_access_key = "your_encrypted_access_key"
-aws_secret_key = "your_encrypted_secret_key"
-bucket_name = "youtube-project-testing"
+aws_access_key = "LUOXVvQxqqVnbwLJcRXWpbQtPmhwxmwr60kArMbf/1A="
+aws_secret_key = "lGxR9qO22xLR62gxfsqFY60gZe6bMNO/gNSc6z1RqXegP95DgvNruK9QRjdvMCao"
+# bucket_name = "youtube-project-testing"
+bucket_name = "de-ashok-project-1"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
 s3_source_directory = "sales_data/"
@@ -16,12 +17,13 @@ s3_processed_directory = "sales_data_processed/"
 
 
 #Database credential
-# MySQL database connection properties
+#MySQL database connection properties
 database_name = "youtube_project"
 url = f"jdbc:mysql://localhost:3306/{database_name}"
 properties = {
     "user": "root",
-    "password": "password",
+    # "password": "password",
+    "password": "Destiny@1980",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
@@ -40,9 +42,10 @@ sales_team_data_mart_table = "sales_team_data_mart"
 mandatory_columns = ["customer_id","store_id","product_name","sales_date","sales_person_id","price","quantity","total_cost"]
 
 
-# File Download location
-local_directory = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\file_from_s3\\"
-customer_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\customer_data_mart\\"
-sales_team_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_team_data_mart\\"
-sales_team_data_mart_partitioned_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_partition_data\\"
-error_folder_path_local = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\error_files\\"
+
+# File Download location(Local)
+local_directory = "C:\\Users\\getas\\Desktop\\Manish_Sir_DE_Project\\Project_1\\file_from_s3\\"
+customer_data_mart_local_file = "C:\\Users\\getas\\Desktop\\Manish_Sir_DE_Project\\Project_1\\customer_data_mart\\"
+sales_team_data_mart_local_file = "C:\\Users\\getas\\Desktop\\Manish_Sir_DE_Project\\Project_1\\sales_team_data_mart\\"
+sales_team_data_mart_partitioned_local_file = "C:\\Users\\getas\\Desktop\\Manish_Sir_DE_Project\\Project_1\\sales_partition_data\\"
+error_folder_path_local = "C:\\Users\\getas\\Desktop\\Manish_Sir_DE_Project\\Project_1\\error_files\\"

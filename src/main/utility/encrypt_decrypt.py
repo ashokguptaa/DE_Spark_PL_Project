@@ -37,3 +37,11 @@ def encrypt(raw):
 def decrypt(enc):
     cipher = AES.new(get_private_key(), AES.MODE_CBC, iv.encode('utf-8'))
     return unpad(cipher.decrypt(base64.b64decode(enc))).decode('utf8')
+
+print('Encrypted Security Access key:', encrypt("lGxR9qO22xLR62gxfsqFY60gZe6bMNO/gNSc6z1RqXegP95DgvNruK9QRjdvMCao"))
+print('Encrypted Access key ID:', encrypt("AKIA3JV2CPBWSXBD3YXK"))
+
+print('Decrypted Security Access key:',decrypt( "ZC1geDOypywA4JMMD7unNJjQORrdNtPZsH7w2ZWDiH/K2tLOOjZLWzXT/MVIURtjhBjALoTY2pQeIp/bWVjZjSPLNPYd7JRnBVsvcv2Rs8Q="))
+print('Decrypted Access key ID:', decrypt("LUOXVvQxqqVnbwLJcRXWpbQtPmhwxmwr60kArMbf/1A="))
+
+

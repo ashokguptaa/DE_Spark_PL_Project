@@ -46,7 +46,7 @@ INSERT INTO customer (first_name, last_name, address, pincode, phone_number, cus
 INSERT INTO customer (first_name, last_name, address, pincode, phone_number, customer_joining_date) VALUES ('Jhanvi', 'Bava', 'Delhi', '122009', '9110074097', '2022-07-14');
 
 
---store table
+-- store table
 CREATE TABLE store (
     id INT PRIMARY KEY,
     address VARCHAR(255),
@@ -134,7 +134,7 @@ CREATE TABLE s3_bucket_info (
 
 --s3 bucket data
 INSERT INTO s3_bucket_info (bucket_name, status, created_date, updated_date)
-VALUES ('youtube-project-testing', 'active', NOW(), NOW());
+VALUES ('de-ashok-project-1', 'active', NOW(), NOW());
 
 
 --Data Mart customer
@@ -148,7 +148,7 @@ CREATE TABLE customers_data_mart (
 );
 
 
---sales mart table
+30--sales mart table
 CREATE TABLE sales_team_data_mart (
     store_id INT,
     sales_person_id INT,

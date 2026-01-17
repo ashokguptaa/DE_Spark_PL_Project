@@ -2,7 +2,7 @@ import boto3
 
 
 class S3ClientProvider:
-    def __init__(self, aws_access_key=None, aws_secret_key=None):
+    def  __init__(self, aws_access_key=None, aws_secret_key=None):
         self.aws_access_key = aws_access_key
         self.aws_secret_key = aws_secret_key
         self.session = boto3.Session(
